@@ -158,6 +158,8 @@ header {
   
  body {
     font-family: 'Merienda';
+    color: white;
+    background-color: #333;
  }
 
  #title {
