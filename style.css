@@ -198,8 +198,7 @@ header {
 }
 
 a #blankmap {
-  width: 95%;
-  height: 95%;
+  height: 100vh;
   object-fit: cover;
   z-index: 0;
 }
