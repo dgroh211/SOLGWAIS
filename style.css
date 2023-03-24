@@ -10,7 +10,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
   }
   
   /* Styles for the logo */
@@ -192,6 +192,35 @@ header {
  #about.visible {
   opacity: 1;
 }
+
+#map {
+  position: relative;
+}
+
+a #blankmap {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.villagewords {
+  position: absolute;
+  top: 49%;
+  left: 24%;
+  width: 40%;
+  z-index: 1;
+  opacity: 1;
+}
+
+#first-img:hover + #second-img{
+  display: block;
+}
+
+#second-img {
+  display: none;
+}
+
 
  @keyframes scroll {
     from { background-position: 0 0; }
