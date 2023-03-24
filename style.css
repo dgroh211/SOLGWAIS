@@ -91,20 +91,27 @@ header {
   .dropdown-content {
     display: none;
     position: absolute;
+    text-align: left;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 60px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+ 
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+    margin: 0; /* Reset the margin */
+   }
   
+   .dropdown-content li {
+    margin: 0;
+    padding: 0;
+  }
+
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
   
