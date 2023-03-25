@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 # set the font file and size
 font_path = "Macro-to-create-txt-images/FFF-Tusj/FFF_Tusj.ttf"
-font_size = 60
+font_size = 50
 font = ImageFont.truetype(font_path, font_size)
 
 # Create new image
@@ -11,8 +11,8 @@ image = Image.new('RGBA', (width, height), (0, 0, 0, 0))
 
 # Add text to image using custom font
 draw = ImageDraw.Draw(image)
-text = ''
+text = 'Sunken City'
 x, y = 50, 50
-draw.text((x, y), text, fill=(255, 255, 255), font=font)
+draw.text((x, y), text, fill=(0, 0, 0), font=font)
 
-image.save("Images/Text Images 4 Map/.png")
+image.save("Images\Text Images 4 Map\mistylake.png")

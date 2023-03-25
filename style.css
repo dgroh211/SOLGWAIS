@@ -39,7 +39,7 @@ header {
   
   nav li {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 40px;
   }
 
   li img {
@@ -48,10 +48,10 @@ header {
     display: inline-block; /* make image a block element */
   }
   
-  .margin-right {
-    margin-right: 2rem;
-  }
-
+   .margin-right {
+    margin-right: 4rem;
+    margin-left: -20px;
+  } 
 
 
   nav li:first-child {

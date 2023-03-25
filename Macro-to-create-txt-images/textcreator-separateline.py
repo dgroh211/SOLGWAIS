@@ -21,7 +21,7 @@ def draw_text(text, font_path, font_size, canvas_size):
     y = (canvas_size[1] - h) / 2 - h/2
 
     # draw first line
-    draw.text((x, y), first_line, font=font, fill=(255, 255, 255, 255))
+    draw.text((x, y), first_line, font=font, fill=(255, 255, 0, 255))
 
     # get size of second line
     w, h = draw.textsize(second_line, font=font)
@@ -31,15 +31,15 @@ def draw_text(text, font_path, font_size, canvas_size):
     y += h  # move y-coordinate down to center second line below the first line
 
     # draw second line
-    draw.text((x, y), second_line, font=font, fill=(255, 255, 255, 255))
+    draw.text((x, y), second_line, font=font, fill=(255, 255, 0, 255))
 
     return img
 
 # example usage
 font_path = "Macro-to-create-txt-images/FFF-Tusj/FFF_Tusj.ttf"
-text = ""
-font_size = 48
+text = "SOLGWAI Village"
+font_size = 50
 canvas_size = (600, 300)
 img = draw_text(text, font_path, font_size, canvas_size)
 # Save image
-img.save('Images/Text Images 4 Map/.png')
+img.save('Images\Text Images 4 Map\villagename.png')
