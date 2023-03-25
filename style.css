@@ -205,21 +205,113 @@ a #blankmap {
 
 .villagewords {
   position: absolute;
-  top: 49%;
-  left: 24%;
-  width: 40%;
+  top: 56.7%;
+  left: 41%;
+  width: 8%;
   z-index: 1;
   opacity: 1;
 }
 
-#first-img:hover + #second-img{
-  display: block;
+.cloudwords {
+  position: absolute;
+  width: 9%;
+  top: 37.6%;
+  left: 22%;
+  z-index: 1;
+  opacity: 1;
 }
+
+.crystalwords {
+  position: absolute;
+  width: 9%;
+  top: 44%;
+  left: 32%;
+  transform: rotate(-25deg);
+  z-index: 1;
+  opacity: 1;
+}
+
+.dragonwords {
+  position: absolute;
+  width: 9%;
+  top: 67%;
+  left: 19%;
+  z-index: 1;
+  opacity: 1;
+}
+
+.enchantedwords {
+  position: absolute;
+  width: 9%;
+  top: 23%;
+  left: 60%;
+  z-index: 1;
+  opacity: 1;
+}
+
+.mistywords {
+  position: absolute;
+  width: 9%;
+  top: 42.7%;
+  left: 59%;
+  z-index: 1;
+  opacity: 1;
+}
+
+.silverwords {
+  position: absolute;
+  width: 14%;
+  top: 78%;
+  left: 57%;
+  transform: rotate(20deg);
+  z-index: 1;
+  opacity: 1;
+}
+
+.starrywords {
+  position: absolute;
+  width: 12%;
+  top: 58.5%;
+  left: 19.5%;
+  z-index: 1;
+  opacity: 1;
+}
+
+.sunkenwords {
+  position: absolute;
+  width: 10%;
+  top: 49%;
+  left: 68%;
+  z-index: 1;
+  opacity: 1;
+}
+
+.whisperwords {
+  position: absolute;
+  width: 8%;
+  top: 68%;
+  left: 43.7%;
+  z-index: 1;
+  opacity: 1;
+}
+
 
 #second-img {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
+#first-img {
+  z-index: 1;
+}
+
+#first-img:hover {
+  opacity: 0;
+}
+
+#second-img:hover {
+  opacity: 1;
+}
 
  @keyframes scroll {
     from { background-position: 0 0; }

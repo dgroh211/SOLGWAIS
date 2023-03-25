@@ -11,8 +11,8 @@ image = Image.new('RGBA', (width, height), (0, 0, 0, 0))
 
 # Add text to image using custom font
 draw = ImageDraw.Draw(image)
-text = 'Silver Sands Beach'
+text = ''
 x, y = 50, 50
-draw.text((x, y), text, fill=(0, 0, 0), font=font)
+draw.text((x, y), text, fill=(255, 255, 255), font=font)
 
-image.save("Images/silversands.png")
+image.save("Images/Text Images 4 Map/.png")
