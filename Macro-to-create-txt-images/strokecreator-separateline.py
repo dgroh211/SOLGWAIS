@@ -5,11 +5,11 @@ image_width = 600
 image_height = 300
 
 # Set text to be written
-text_line1 = "Whispering"
-text_line2 = "Valley"
+text_line1 = "Solgwai"
+text_line2 = "Village"
 
 # Set font size and font style
-font_path = "Macro-to-create-txt-images/FFF-Tusj/FFF_Tusj.ttf"
+font_path = "Macro-to-create-txt-images/blackchancery/BLKCHCRY.TTF"
 font_size = 50
 font = ImageFont.truetype(font_path, font_size)
 
@@ -21,7 +21,7 @@ draw = ImageDraw.Draw(image)
 
 # Set stroke width and color
 stroke_width = 1
-stroke_color = (0, 0, 0)
+stroke_color = (255, 255, 0, 255)
 
 # Get text dimensions for each line
 text_line1_width, text_line1_height = draw.textsize(text_line1, font)
@@ -50,4 +50,4 @@ draw.text((x_line1, y_line1), text_line1, font=font, fill=(0, 0, 0, 255))
 draw.text((x_line2, y_line2), text_line2, font=font, fill=(0, 0, 0, 255))
 
 # Save image
-image.save("Images\Text Images 4 Map\whisperingvalley.png")
+image.save("Images/Text Images 4 Map/villagename.png")

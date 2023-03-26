@@ -5,10 +5,10 @@ image_width = 600
 image_height = 300
 
 # Set text to be written
-text = "Silver Sands Beach"
+text = "Cloud Peak"
 
 # Set font size and font style
-font_path = "Macro-to-create-txt-images/FFF-Tusj/FFF_Tusj.ttf"
+font_path = "Macro-to-create-txt-images/blackchancery/BLKCHCRY.TTF"
 font_size = 50
 font = ImageFont.truetype(font_path, font_size)
 
@@ -20,7 +20,7 @@ draw = ImageDraw.Draw(image)
 
 # Set stroke width and color
 stroke_width = 1
-stroke_color = (0, 0, 0)
+stroke_color = (255, 255, 0, 255)
 
 # Get text dimensions
 text_width, text_height = draw.textsize(text, font)
@@ -29,14 +29,14 @@ text_width, text_height = draw.textsize(text, font)
 x = (image_width - text_width) // 2
 y = (image_height - text_height) // 2
 
-# # Draw text with stroke
-# draw.text((x-stroke_width, y-stroke_width), text, font=font, fill=stroke_color)
-# draw.text((x+stroke_width, y-stroke_width), text, font=font, fill=stroke_color)
-# draw.text((x-stroke_width, y+stroke_width), text, font=font, fill=stroke_color)
-# draw.text((x+stroke_width, y+stroke_width), text, font=font, fill=stroke_color)
+# Draw text with stroke
+draw.text((x-stroke_width, y-stroke_width), text, font=font, fill=stroke_color)
+draw.text((x+stroke_width, y-stroke_width), text, font=font, fill=stroke_color)
+draw.text((x-stroke_width, y+stroke_width), text, font=font, fill=stroke_color)
+draw.text((x+stroke_width, y+stroke_width), text, font=font, fill=stroke_color)
 
 # Draw text
 draw.text((x, y), text, font=font, fill=(0, 0, 0, 255))
 
 # Save image
-image.save("Images\Text Images 4 Map\silversands.png")
+image.save("Images\Text Images 4 Map\highlighted-cloudpeak.png")

@@ -214,7 +214,7 @@ header {
     background-position: center center;
     opacity: 0;
     z-index: 1;
-    transition: opacity 1.25s ease-in-out;
+    transition: opacity 0.75s ease-in-out;
  }
 
  #about.visible {
@@ -233,9 +233,9 @@ a #blankmap {
 
 .villagewords {
   position: absolute;
-  top: 56.7%;
-  left: 41%;
-  width: 8%;
+  top: 56.9%;
+  left: 42%;
+  height: 4%;
   z-index: 1;
   opacity: 1;
 }
@@ -270,9 +270,9 @@ a #blankmap {
 
 .enchantedwords {
   position: absolute;
-  width: 9%;
-  top: 23%;
-  left: 60%;
+  width: 8%;
+  top: 23.2%;
+  left: 61%;
   z-index: 1;
   opacity: 1;
 }
@@ -289,8 +289,8 @@ a #blankmap {
 .silverwords {
   position: absolute;
   width: 14%;
-  top: 78%;
-  left: 57%;
+  top: 77.3%;
+  left: 56.7%;
   transform: rotate(20deg);
   z-index: 1;
   opacity: 1;
@@ -298,9 +298,9 @@ a #blankmap {
 
 .starrywords {
   position: absolute;
-  width: 12%;
-  top: 58.5%;
-  left: 19.5%;
+  width: 10%;
+  top: 58.3%;
+  left: 20%;
   z-index: 1;
   opacity: 1;
 }
@@ -309,15 +309,15 @@ a #blankmap {
   position: absolute;
   width: 10%;
   top: 49%;
-  left: 68%;
+  left: 68.6%;
   z-index: 1;
   opacity: 1;
 }
 
 .whisperwords {
   position: absolute;
-  width: 8%;
-  top: 68%;
+  width: 7.5%;
+  top: 67.7%;
   left: 43.7%;
   z-index: 1;
   opacity: 1;
