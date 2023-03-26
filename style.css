@@ -207,6 +207,15 @@ header {
     font-family: 'Bubblegum Sans';
  }
 
+ #squadtitle {
+  font-size: 50px;
+  top: -50px;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Bubblegum Sans';
+ }
+
  #about {
     background-image: url("Images/Landscape Portrait.png");
     background-repeat: no-repeat;
@@ -340,6 +349,80 @@ a #blankmap {
 #second-img:hover {
   opacity: 1;
 }
+
+.squad-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.profile {
+  text-align: center;
+  margin: 0 10px;
+  width: 200px;
+  position: relative;
+}
+
+.profile img {
+  border-radius: 20%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile-image {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.twitter-icon {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.twitter-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.twitter-outline {
+  width: 10%;
+}
+
+.profile:hover .profile-image {
+  opacity: 0.5;
+}
+
+.profile:hover .twitter-icon {
+  opacity: 1;
+}
+
+.twitter-icon:hover {
+  opacity: 1;
+}
+
+.profile h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px;
+}
+
+.profile p {
+  margin-top: 5px;
+  font-style: italic;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px;
+}
+
 
  @keyframes scroll {
     from { background-position: 0 0; }
