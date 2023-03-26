@@ -159,6 +159,11 @@ header {
 
   #squad {
     margin-top: 200px;
+    padding-top: 100px;
+  }
+
+  #squadtitle {
+    padding-top: 100px;
   }
 
   #home-page-section {
@@ -408,18 +413,12 @@ a #blankmap {
 .profile h3 {
   margin-top: 10px;
   font-size: 1.2em;
-  background-color: red;
-  border-radius: 50%;
-  display: inline-block;
   padding: 5px;
 }
 
 .profile p {
   margin-top: 5px;
   font-style: italic;
-  background-color: red;
-  border-radius: 50%;
-  display: inline-block;
   padding: 5px;
 }
 
