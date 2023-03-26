@@ -5,8 +5,8 @@ image_width = 600
 image_height = 300
 
 # Set text to be written
-text_line1 = "Enchanted"
-text_line2 = "Forest"
+text_line1 = "Whispering"
+text_line2 = "Valley"
 
 # Set font size and font style
 font_path = "Macro-to-create-txt-images/FFF-Tusj/FFF_Tusj.ttf"
@@ -33,21 +33,21 @@ y_line1 = (image_height - text_line1_height - text_line2_height) // 2
 x_line2 = (image_width - text_line2_width) // 2
 y_line2 = y_line1 + text_line1_height
 
-# Draw text with stroke for line 1
-draw.text((x_line1-stroke_width, y_line1-stroke_width), text_line1, font=font, fill=stroke_color)
-draw.text((x_line1+stroke_width, y_line1-stroke_width), text_line1, font=font, fill=stroke_color)
-draw.text((x_line1-stroke_width, y_line1+stroke_width), text_line1, font=font, fill=stroke_color)
-draw.text((x_line1+stroke_width, y_line1+stroke_width), text_line1, font=font, fill=stroke_color)
+# # Draw text with stroke for line 1
+# draw.text((x_line1-stroke_width, y_line1-stroke_width), text_line1, font=font, fill=stroke_color)
+# draw.text((x_line1+stroke_width, y_line1-stroke_width), text_line1, font=font, fill=stroke_color)
+# draw.text((x_line1-stroke_width, y_line1+stroke_width), text_line1, font=font, fill=stroke_color)
+# draw.text((x_line1+stroke_width, y_line1+stroke_width), text_line1, font=font, fill=stroke_color)
 
-# Draw text with stroke for line 2
-draw.text((x_line2-stroke_width, y_line2-stroke_width), text_line2, font=font, fill=stroke_color)
-draw.text((x_line2+stroke_width, y_line2-stroke_width), text_line2, font=font, fill=stroke_color)
-draw.text((x_line2-stroke_width, y_line2+stroke_width), text_line2, font=font, fill=stroke_color)
-draw.text((x_line2+stroke_width, y_line2+stroke_width), text_line2, font=font, fill=stroke_color)
+# # Draw text with stroke for line 2
+# draw.text((x_line2-stroke_width, y_line2-stroke_width), text_line2, font=font, fill=stroke_color)
+# draw.text((x_line2+stroke_width, y_line2-stroke_width), text_line2, font=font, fill=stroke_color)
+# draw.text((x_line2-stroke_width, y_line2+stroke_width), text_line2, font=font, fill=stroke_color)
+# draw.text((x_line2+stroke_width, y_line2+stroke_width), text_line2, font=font, fill=stroke_color)
 
 # Draw text
 draw.text((x_line1, y_line1), text_line1, font=font, fill=(0, 0, 0, 255))
 draw.text((x_line2, y_line2), text_line2, font=font, fill=(0, 0, 0, 255))
 
 # Save image
-image.save("Images\Text Images 4 Map\enchantedforest.png")
+image.save("Images\Text Images 4 Map\whisperingvalley.png")

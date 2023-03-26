@@ -160,7 +160,7 @@ header {
   #squad {
     margin-top: 200px;
   }
-  
+
   #home-page-section {
     position: relative;
     z-index: 1; /* set z-index to ensure content appears on top of slideshow */
@@ -180,6 +180,17 @@ header {
     animation: scroll 160s linear infinite;
  } 
   
+  #infront {
+    position: absolute;
+    background-image: url('Images/transparent base.png');
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
  body {
     font-family: 'Merienda';
     color: white;

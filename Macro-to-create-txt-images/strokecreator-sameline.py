@@ -5,7 +5,7 @@ image_width = 600
 image_height = 300
 
 # Set text to be written
-text = "Crystal Cliffs"
+text = "Silver Sands Beach"
 
 # Set font size and font style
 font_path = "Macro-to-create-txt-images/FFF-Tusj/FFF_Tusj.ttf"
@@ -29,14 +29,14 @@ text_width, text_height = draw.textsize(text, font)
 x = (image_width - text_width) // 2
 y = (image_height - text_height) // 2
 
-# Draw text with stroke
-draw.text((x-stroke_width, y-stroke_width), text, font=font, fill=stroke_color)
-draw.text((x+stroke_width, y-stroke_width), text, font=font, fill=stroke_color)
-draw.text((x-stroke_width, y+stroke_width), text, font=font, fill=stroke_color)
-draw.text((x+stroke_width, y+stroke_width), text, font=font, fill=stroke_color)
+# # Draw text with stroke
+# draw.text((x-stroke_width, y-stroke_width), text, font=font, fill=stroke_color)
+# draw.text((x+stroke_width, y-stroke_width), text, font=font, fill=stroke_color)
+# draw.text((x-stroke_width, y+stroke_width), text, font=font, fill=stroke_color)
+# draw.text((x+stroke_width, y+stroke_width), text, font=font, fill=stroke_color)
 
 # Draw text
 draw.text((x, y), text, font=font, fill=(0, 0, 0, 255))
 
 # Save image
-image.save("Images\Text Images 4 Map\crystalcliffs.png")
+image.save("Images\Text Images 4 Map\silversands.png")
