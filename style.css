@@ -64,7 +64,7 @@ header {
     font-weight: bold;
   }
   
-  nav a:hover {
+  nav a:hover, nav a.active {
     color: #666;
   }
   
