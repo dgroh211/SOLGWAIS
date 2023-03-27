@@ -1,18 +1,55 @@
-/* Styles for the header */
+body {
+  position: relative;
+  font-family: 'Merienda';
+  color: white;
+  background-color: gray;
+}
+
+body::before {
+  content: "";
+  background-image: url('Images/village.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: .5; /* Adjust the opacity value between 0 (fully transparent) and 1 (fully opaque) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the background image behind the page content */
+}
+
 header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
+  position: relative; /* Ensure the ::before pseudo-element is positioned relative to the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header::before {
+  content: ""; /* Necessary for the pseudo-element to be generated */
+  background-image: url('Images/bk3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: .90; /* Adjust the opacity value as needed, from 0 (transparent) to 1 (opaque) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo-element below the header's content */
+}
+
   /* Styles for the logo */
   .logo {
     display: inline-block;
@@ -59,18 +96,18 @@ header {
   }
   
   nav a {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-weight: bold;
   }
   
-  nav a:hover, nav a.active {
-    color: #666;
+  nav a:hover, .nav-link.active {
+    color: yellow;
   }
   
   /* Dropdown Button */
 .dropbtn {
-    color: black;
+    color: white;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -78,7 +115,7 @@ header {
   
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
-    color: #666;
+    color: yellow;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -173,11 +210,11 @@ header {
 
  #slideshow {
     position:absolute;
-    top: 220px;
+    top: 300px;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -10;
+    z-index: 1;
     background-image: url('Images/slideshow.png');
     background-size: auto 50%;
     background-position: 0 0;
@@ -193,23 +230,36 @@ header {
     background-position: 0 0;
     width: 100%;
     height: 150%;
-    z-index: 1;
+    z-index: 2;
     top: 27%;
   }
 
- body {
+ /* body {
     font-family: 'Merienda';
     color: white;
     background-color: #333;
- }
+ }*/
+
+#header-logo {
+  display: inline-block;
+  top: 120px;
+  position: absolute;
+  justify-content: center;
+  background-image: url('Images/image0.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 200px; /* Adjust this value to set the desired logo width */
+  margin-bottom: 10px; /* Add some spacing between the logo and the title */
+}
 
  #title {
-    font-size: 50px;
-    top: 100px;
+    font-size: 40px;
+    top: 40px;
     position: absolute;
     text-align: center;
     justify-content: center;
     font-family: 'Bubblegum Sans';
+    color:white;
  }
 
  #squadtitle {
@@ -227,7 +277,7 @@ header {
     background-size: cover;
     background-position: center center;
     opacity: 0;
-    z-index: 1;
+    z-index: 3;
     transition: opacity 0.75s ease-in-out;
  }
 
