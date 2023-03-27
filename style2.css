@@ -101,7 +101,7 @@ header::before {
     font-weight: bold;
   }
   
-  nav a:hover {
+  nav a:hover, .nav-link.active {
     color: yellow;
   }
   
