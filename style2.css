@@ -7,7 +7,7 @@ body {
 
 body::before {
   content: "";
-  background-image: url('images/GR_tf.jpg');
+  background-image: url('images/village.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
