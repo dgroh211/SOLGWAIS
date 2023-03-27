@@ -7,7 +7,7 @@ body {
 
 body::before {
   content: "";
-  background-image: url('images/village.png');
+  background-image: url('Images/village.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -37,7 +37,7 @@ header {
 
 header::before {
   content: ""; /* Necessary for the pseudo-element to be generated */
-  background-image: url('images/bk3.jpg');
+  background-image: url('Images/bk3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
