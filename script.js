@@ -58,17 +58,40 @@ function myFunction() {
 
   window.addEventListener("scroll", highlightNavLink);
 
-  const faqItems = document.querySelectorAll('.faq-item');
+// Get all the faq-question elements
+const questions = document.querySelectorAll(".faq-question");
 
-  faqItems.forEach(item => {
-    const question = item.querySelector('.question');
-    const answer = item.querySelector('.answer');
-  
-    question.addEventListener('click', () => {
-      answer.classList.toggle('show-answer');
-    });
+// Add a click event listener to each question
+questions.forEach(function(question) {
+  question.addEventListener("click", function() {
+    // Get the corresponding faq-answer element
+    const answer = question.nextElementSibling;
+
+    // Check if the answer is currently visible
+    if (answer.style.display === "block") {
+      // If it is, hide the answer and change the icon to plus
+      answer.style.display = "none";
+      question.classList.remove("active");
+      question.querySelector(".faq-icon").textContent = "+";
+    } else {
+      // If it isn't, hide any other visible answers and change their icons to plus
+      const visibleAnswer = document.querySelector(".faq-answer[style='display: block;']");
+      if (visibleAnswer) {
+        visibleAnswer.style.display = "none";
+        visibleAnswer.previousElementSibling.classList.remove("active");
+        visibleAnswer.previousElementSibling.querySelector(".faq-icon").textContent = "+";
+      }
+      // And show the answer for the clicked question and change the icon to minus
+      answer.style.display = "block";
+      question.classList.add("active");
+      question.querySelector(".faq-icon").textContent = "-";
+    }
   });
-  
+});
+
+
+
+
   
   
   
