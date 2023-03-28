@@ -3,6 +3,7 @@ body {
   font-family: 'Merienda';
   color: white;
   background-color: gray;
+  margin: 0;
 }
 
 body::before {
@@ -276,6 +277,7 @@ header::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    border-radius: 10%;
     opacity: 0;
     z-index: 3;
     transition: opacity 0.75s ease-in-out;
@@ -293,6 +295,7 @@ a #blankmap {
   width: 100%;
   object-fit: cover;
   z-index: 0;
+  border-radius: 5%;
 }
 
 .villagewords {
@@ -471,6 +474,42 @@ a #blankmap {
   font-style: italic;
   padding: 5px;
 }
+
+.faq-section {
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.faq-button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.faq-button:focus, .faq-button:hover {
+  background-color: #e5e5e5;
+}
+
+.faq-button.active {
+  background-color: #fff;
+}
+
+.faq-item .answer {
+  display: none;
+}
+
+.answer.show {
+  display: block;
+  max-height: 1000px; /* Set a high max-height value to ensure the answer fully expands */
+  transition: max-height 0.3s ease-in; /* Add a transition effect when the answer is opened */
+}
+
 
 
  @keyframes scroll {
