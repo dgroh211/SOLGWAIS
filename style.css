@@ -196,7 +196,7 @@ header::before {
   }
 
   #squad {
-    margin-top: 200px;
+    margin-top: 400px;
     padding-top: 100px;
   }
 
@@ -255,7 +255,7 @@ header::before {
 
  #title {
     font-size: 40px;
-    top: 40px;
+    top: 30px;
     position: absolute;
     text-align: center;
     justify-content: center;
@@ -273,19 +273,50 @@ header::before {
  }
 
  #about {
-    background-image: url("Images/Landscape Portrait.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 10%;
-    opacity: 0;
-    z-index: 3;
-    transition: opacity 0.75s ease-in-out;
+  background-image: url("Images/Landscape Portrait.png");
+  background-repeat: no-repeat;    
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+  z-index: 3;
+  border-top: 5px white solid;
+  border-bottom: 5px white solid;
  }
 
- #about.visible {
-  opacity: 1;
+#aboutp {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+#aboutbtn {
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#roadmap {
+  margin-top: 300px;
+  background-image: url('Images/fellowship.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 rgba(0,0,0,0.5);
+  border-top: 5px white solid;
+  border-bottom: 5px white solid;
+}
+
 
 #map {
   position: relative;
@@ -476,6 +507,7 @@ a #blankmap {
 }
 
 .faq {
+  margin-top: 100px;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -485,9 +517,8 @@ a #blankmap {
 .faq-item {
   border: 1px solid #ddd;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: .5em;
   margin-bottom: 20px;
-  background-color: black;
 }
 
 .faq-question {
@@ -496,9 +527,6 @@ a #blankmap {
   text-align: left;
   align-items: center;
   padding: 1em;
-  border: 1px solid #ddd;
-  border-radius: 0.5em;
-  margin-bottom: 1em;
   cursor: pointer;
 }
 
@@ -508,13 +536,27 @@ a #blankmap {
 }
 
 .faq-icon {
-  margin-left: 20px;
-  font-size: 16px;
+  margin-left: 100px;
+  font-size: 30px;
   line-height: 1;
-  color: #666;
   transition: transform 0.2s ease-out;
 }
 
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
 
 
  @keyframes scroll {

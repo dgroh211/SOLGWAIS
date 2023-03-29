@@ -30,17 +30,17 @@ function myFunction() {
     }
   }
 
-  const aboutSection = document.querySelector("#about");
-  const aboutObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        aboutSection.classList.add("visible");
-      } else {
-        aboutSection.classList.remove("visible");
-      }
-    });
-  });
-  aboutObserver.observe(aboutSection);
+  // const aboutSection = document.querySelector("#about");
+  // const aboutObserver = new IntersectionObserver(entries => {
+  //   entries.forEach(entry => {
+  //     if (entry.isIntersecting) {
+  //       aboutSection.classList.add("visible");
+  //     } else {
+  //       aboutSection.classList.remove("visible");
+  //     }
+  //   });
+  // });
+  // aboutObserver.observe(aboutSection);
 
   var navLinks = document.querySelectorAll(".nav-link");
   var sections = document.querySelectorAll("section");
