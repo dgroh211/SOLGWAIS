@@ -272,7 +272,7 @@ header::before {
   font-family: 'Bubblegum Sans';
  }
 
- #about {
+ #roadmap {
   background-image: url("Images/Landscape Portrait.png");
   background-repeat: no-repeat;    
   background-size: cover;
@@ -306,9 +306,9 @@ header::before {
   text-decoration: none;
 }
 
-#roadmap {
+#about {
   margin-top: 300px;
-  background-image: url('Images/fellowship.jpg');
+  background-image: url('Images/walking.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
