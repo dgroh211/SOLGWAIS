@@ -242,9 +242,8 @@ header::before {
  }*/
 
 #header-logo {
-  top: 120px;
-  left: 43.6%;
-  position: absolute;
+  top: -150px;
+  position: relative;
   justify-content: center;
   align-items: center;
   z-index: 10;
