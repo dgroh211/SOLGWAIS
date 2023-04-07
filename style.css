@@ -194,6 +194,8 @@ header::before {
   #legend {
     margin-bottom: 200px;
     background-image: url("Images/legend.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 
   #legend-container {
