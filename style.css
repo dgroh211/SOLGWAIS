@@ -8,7 +8,7 @@ body {
 
 body::before {
   content: "";
-  background-image: url('Images/village.png');
+  background-image: url('Images/door.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
