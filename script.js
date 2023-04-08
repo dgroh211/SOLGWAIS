@@ -88,8 +88,3 @@ questions.forEach(function(question) {
     }
   });
 });
-
-
-  
-  
-  

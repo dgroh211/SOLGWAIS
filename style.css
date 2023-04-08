@@ -215,8 +215,7 @@ header::before {
   }
 
   #legend {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 163px;
     background-image: url("Images/legend.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -273,7 +272,7 @@ header::before {
  }*/
 
 #header-logo {
-  top: -55px;
+  top: -60px;
   position: relative;
   z-index: 10;
   max-width: 200px; 
@@ -315,9 +314,7 @@ header::before {
   background-size: cover;
   background-position: center center;
   opacity: 1;
-  z-index: 5;
-  border-top: 5px white solid;
-  border-bottom: 5px white solid;
+  z-index: 5
  }
 
 #aboutp {
@@ -345,14 +342,11 @@ header::before {
 }
 
 #about {
-  margin-top: 300px;
   background-image: url('Images/walking.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 rgba(0,0,0,0.5);
-  border-top: 5px white solid;
-  border-bottom: 5px black solid;
 }
 
 #map {
@@ -488,6 +482,9 @@ a #blankmap {
   margin: 0 10px;
   width: 200px;
   position: relative;
+  background-color: black;
+  border-radius: 20px;
+  padding-top: 10px;
 }
 
 .profile img {
@@ -549,7 +546,6 @@ a #blankmap {
   height: auto;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 5px;
 }
 
 .faq-item {
@@ -557,6 +553,7 @@ a #blankmap {
   padding: 10px;
   border-radius: .5em;
   margin-bottom: 20px;
+  background-color: black;
 }
 
 .faq-question {
