@@ -180,19 +180,6 @@ header::before {
     text-align: center;
 
   }
-  #footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  #footer img {
-    max-width: 20%;
-    height: auto;
-  }
 
   .footer {
     height: 200px;
@@ -200,13 +187,34 @@ header::before {
     color: #fff;
     display: flex;
     padding: 30px;
-    justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
   
+  .scrolling-container {
+    display: flex;
+    animation: scroll-left 40s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+
   .footer img {
     width: 400px;
+    height: 200px;
     margin: 0 20px;
+  }
+
+  .footer p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   section, #roadmap {
