@@ -13,7 +13,7 @@ body::before {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: .5; /* Adjust the opacity value between 0 (fully transparent) and 1 (fully opaque) */
+  opacity: 1.0; /* Adjust the opacity value between 0 (fully transparent) and 1 (fully opaque) */
   position: absolute;
   top: 0;
   left: 0;
@@ -38,11 +38,12 @@ header {
 
 header::before {
   content: ""; /* Necessary for the pseudo-element to be generated */
-  background-image: url('Images/bk3.jpg');
+  /* background-image: url('Images/bk3.jpg'); */
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: .90; /* Adjust the opacity value as needed, from 0 (transparent) to 1 (opaque) */
+  opacity: .50; /* Adjust the opacity value as needed, from 0 (transparent) to 1 (opaque) */
   position: absolute;
   top: 0;
   left: 0;
