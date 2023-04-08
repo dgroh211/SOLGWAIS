@@ -289,16 +289,6 @@ header::before {
   color:white;
  }
 
- #hometitle {
-  font-size: 40px;
-  top: -180px;
-  position: relative;
-  text-align: center;
-  justify-content: center;
-  font-family: 'Bubblegum Sans';
-  color:white;
- }
-
  #squadtitle {
   font-size: 50px;
   position: relative;
@@ -930,10 +920,6 @@ i {
       max-width: 300px;
     }
 
-    #hometitle {
-      top: -460px;
-      font-size: 80px;
-    }
 
     #roadmap {
       height: 50vh;
@@ -1024,11 +1010,6 @@ i {
   #header-logo {
     top: -680px;
     max-width: 300px;
-  }
-
-  #hometitle {
-    top: -650px;
-    font-size: 90px;
   }
 
   #roadmap {
