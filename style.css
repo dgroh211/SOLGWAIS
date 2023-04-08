@@ -206,11 +206,7 @@ header::before {
 
   #squad {
     margin-top: 200px;
-  }
-
-  #home-page-section {
-    position: relative;
-    z-index: 1; /* set z-index to ensure content appears on top of slideshow */
+    height: auto;
   }
 
   #home {
@@ -218,7 +214,6 @@ header::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     z-index: 2;
   }
 
@@ -538,6 +533,7 @@ a #blankmap {
 .faq {
   margin-top: 100px;
   max-width: 600px;
+  height: auto;
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
@@ -603,9 +599,13 @@ a #blankmap {
     position: relative;
     width: 350px;
     height: 500px;
+    min-width: 150px; /* set the minimum width of the book */
+    min-height: 250px; /* set the minimum height of the book */
+    max-width: 100%; /* allow the book to scale down to 100% of the container width */
+    max-height: 100%; /* allow the book to scale down to 100% of the container height */
     transition: transform 0.5s;
     font-family: 'MyFont', sans-serif;
-}
+  }
 
 .paper {
     position: absolute;
@@ -743,6 +743,15 @@ i {
       font-size: 1em;
     }
 
+    #slideshow {
+      background-size: auto 40%;
+    }
+
+    #infront {
+      background-size: auto 45%;
+      top: 37%;
+      left: 0;
+    }
 }
 
 @media (max-width: 928px) {
@@ -751,6 +760,9 @@ i {
     font-size: 0.8em;
 }
 
+  #roadmap {
+    height: 90vh;
+  }
 }
 
 @media (max-width: 756px) {
@@ -761,6 +773,41 @@ i {
     margin-right: 50px;
 }
 
+  .book {
+  width: 220px;
+  height: 370px;
+}
+
+  .book p {
+  font-size: 15px;
+}
+
+  #f1 {
+    font-size: 25px;
+  }
+
+  #squad {
+    margin-top: -100px;
+  }
+
+  #legend {
+    background-size: auto 75%;
+    margin-bottom: -150px;
+  }
+
+  .faq {
+    width: 400px;
+  }
+
+  #infront {
+    background-size: auto 40%;
+    top: 42%;
+    left: 0;
+  }
+
+  #roadmap {
+    height: 80vh;
+  }
 }
 
 @media (max-width: 430px) {
@@ -770,9 +817,188 @@ i {
     margin-left: 30px;
     margin-right: 30px;
   }
+
+  .book {
+    width: 150px;
+    height: 250px;
+  }
+  
+    .book p {
+    font-size: 10px;
+  }
+  
+    #f1 {
+      font-size: 20px;
+    }
+
+    #squad {
+      margin-top: -150px;
+    }
+
+    #legend {
+      background-size: auto 55%;
+      margin-bottom: -350px;
+    }
+
+    #legendback {
+      margin: 20px;
+    }
+
+    .faq {
+      width: 200px;
+    }
+
+    #slideshow {
+      background-size: auto 25%;
+    }
+
+    #infront {
+      background-size: auto 33%;
+      top: 53%;
+      left: 0;
+    }
+
+    #header-logo {
+      top: -200px;
+      position: relative;
+      z-index: 10;
+      max-width: 150px; 
+      margin-bottom: 10px; 
+    }
+
+    #roadmap {
+      height: 70vh;
+    }
 }
 
-@media (max-device-width: 480px) {
+@media screen and (max-device-width: 425px) {
 
+    #infront {
+      background-size: auto 35%;
+      top: 50%;
+    }
+
+    #slideshow {
+      top: 370px;
+    }
+
+    #header-logo {
+      top: -500px;
+      max-width: 300px;
+    }
+
+    #hometitle {
+      top: -460px;
+      font-size: 80px;
+    }
+
+    #roadmap {
+      height: 50vh;
+    }
+
+    #about {
+      height: 70vh;
+      font-size: 21px;
+    }
+
+    #legend {
+      background-size: auto 65%;
+      margin-bottom: -500px;
+    }
+
+    #legendtitle {
+      font-size: 80px;
+    }
+
+    .book {
+      max-width: 125%;
+      max-height: 125%;
+      width: 437.5px;
+      height: 625px;
+    }
+
+    .book p {
+      font-size: 28px;
+    }
+
+    i {
+      font-size: 100px;
+    }
+
+    #village {
+      margin-bottom: -500px;
+    }
+
+    #squadtitle {
+      font-size: 100px;
+    }
+
+    .profile {
+      width: 700px;
+      height: 700px;
+    }
+
+    .profile img {
+      width: 500px;
+      height: 500px;
+    }
+
+    .profile h3 {
+      font-size: 40px;
+    }
+
+    .profile p {
+      font-size: 30px;
+    }
+
+    .faq-content {
+      font-size: 50px;
+      margin-bottom: 100px;
+    }
+
+    #title {
+      font-size: 60px;
+      padding: 5;
+    }
+}
+
+@media screen and (max-device-width: 320px) {
+
+  #infront {
+    background-size: auto 30%;
+    top: 57%;
+  }
+
+  #slideshow {
+    top: 500px;
+  }
+
+  #header-logo {
+    top: -680px;
+    max-width: 300px;
+  }
+
+  #hometitle {
+    top: -650px;
+    font-size: 90px;
+  }
+
+  #roadmap {
+    height: 40vh;
+  }
+
+  #about {
+    height: 70vh;
+    font-size: 24px;
+  }
+
+  #legend {
+    background-size: auto 50%;
+    margin-bottom: -1200px;
+  }
+
+  #village {
+    margin-bottom: -700px;
+  }
 
 }
