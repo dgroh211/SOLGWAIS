@@ -233,7 +233,7 @@ header::before {
     margin-bottom: 200px;
     background-image: url("Images/legend.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
 
   #legend-container {
