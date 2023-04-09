@@ -3,6 +3,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
   <head>
     <link href="Images/image0.jpg" rel="icon">
@@ -11,13 +12,17 @@
     <link rel="stylesheet" href="style.css??v=1.5">
     <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/b6303e08c1.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-        <div class="logo"></div>
+      <div class="logo"></div>
       <nav>
-        <ul>
+        <div class="icon">
+          <span class="toggle">☰</span>
+        </div>
+        <ul class="list-item">
           <li><a class="nav-link" href="#home">Home</a></li>
           <li><a class="nav-link" href="#about">About Us</a></li>
           <li><a class="nav-link" href="#legend">Legend</a></li>
@@ -43,9 +48,8 @@
         <div id="slideshow"></div> 
         <div id="infront"></div>
       </section>
-      <div id="roadmap">
-
-      </div>
+      <div id="roadmap"></div>
+      <div id="stars"></div>
       <section id="about">
         <h2 id="title">About Us</h2>
           <p id="aboutp">Introducing Solgwais, a spin on the 80s Characters Mogwais 
@@ -68,6 +72,7 @@
           <p id="aboutp">Make sure to feed your Solgwais, if you don't something might happen to them.......</p>
           <a href="https://app.gitbook.com/invite/e7ZYoKjpQ11ojHy9L0WR/03zYEPrwE0yoz6iSUwSq" id="aboutbtn">Whitepaper</a>
       </section>
+      <div id="stars"></div>
       <section id="legend">
         <div id="legend-container">
         <h2 id="legendtitle">Legend</h2>
@@ -343,7 +348,7 @@
             <div class="faq-question">
                 What is the mint price?<span class="faq-icon">+</span>
             </div>
-            <div class="faq-answer">1 SOL</div>
+            <div class="faq-answer">TBA</div>
           </div>
           <div class="faq-item">
             <div class="faq-question">

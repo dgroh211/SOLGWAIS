@@ -33,6 +33,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 80px;
   z-index: 1000;
 }
 
@@ -55,8 +56,8 @@ header::before {
   /* Styles for the logo */
   .logo {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     background-image: url('Images/image0.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -746,6 +747,29 @@ i {
   margin: 50px;
 }
 
+#stars {
+  margin: 0;
+  background-image: url("Images/stars.png");
+  background-size: repeat;
+  width: 100%;
+  height: 140px;
+  z-index: 10;
+}
+
+.icon {
+  display: none;
+}
+
+.toggle {
+  float: right;
+  margin: 20px;
+  color: #EEE;
+  font-size: 30px;
+  border: 1px solid #EEE;
+  padding: 0px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 @media (max-width: 1210px) {
 
@@ -784,6 +808,65 @@ i {
 
   #roadmap {
     height: 90vh;
+  }
+
+  .icon {
+    display: block;
+    width: 100%;
+    height: 34px;
+    margin-right: 20px;
+  }
+
+  .list-item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #222;
+    display: none;
+    margin-top: -15px;
+  }
+  .list-item li {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    float: none;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* .dropdown .dropbtn {
+    display: none;
+  } */
+
+   .dropdown .dropdown-content li {
+    display: none;
+  } 
+
+  header {
+    display: block;
+    padding-left: 0;
+  }
+
+  nav {
+    display: block;
+    margin-left: 0;
+  }
+
+  nav li {
+    margin-left: 0;
+  }
+
+  .margin-right {
+    margin: 0;
+  }
+  .toggle {
+    margin-top: -46px;
+    margin-right: 12px;
+  }
+  
+  .logo {
+    margin-top: 15px;
+    margin-left: 20px;
   }
 }
 

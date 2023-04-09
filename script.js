@@ -88,3 +88,18 @@ questions.forEach(function(question) {
     }
   });
 });
+
+$('.toggle').click(function () {
+  "use strict";
+  $('nav ul').slideToggle();
+});
+
+
+
+$(window).resize(function () {
+  "use strict";
+  if ($(window).width() > 928) {
+      $('nav ul').removeAttr('style');
+  }
+});
+
