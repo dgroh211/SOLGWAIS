@@ -8,11 +8,8 @@ body {
 
 body::before {
   content: "";
-  background-image: url('Images/door3.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url('Images/stars.png');
+  background-size: repeat;
   opacity: 1.0; /* Adjust the opacity value between 0 (fully transparent) and 1 (fully opaque) */
   position: absolute;
   top: 0;
@@ -33,7 +30,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 80px; */
+  height: 80px;
   z-index: 1000;
 }
 
@@ -56,8 +53,8 @@ header::before {
   /* Styles for the logo */
   .logo {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     background-image: url('Images/new_logo.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -233,7 +230,7 @@ header::before {
   }
 
   #home {
-    /* background-image: url('Images/tumblr_nz14o7t0Z61skcd7fo1_500.gif'); */
+    background-image: url('Images/door3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -316,7 +313,8 @@ header::before {
   background-size: cover;
   background-position: center center;
   opacity: 1;
-  z-index: 5
+  z-index: 5;
+  margin-bottom: 150px;
  }
 
 #aboutp {
@@ -349,6 +347,7 @@ header::before {
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 rgba(0,0,0,0.5);
+  margin-bottom: 150px;
 }
 
 #map {
@@ -481,7 +480,7 @@ a #blankmap {
 
 .profile {
   text-align: center;
-  margin: 0 10px;
+  margin: 10px;
   width: 200px;
   position: relative;
   background-color: black;
