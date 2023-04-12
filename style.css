@@ -9,7 +9,7 @@ body {
 
 body::before {
   content: "";
-  background-image: url('Images/stars.png');
+  background-image: url('Images/stars1.png');
   background-size: repeat;
   opacity: 1.0; /* Adjust the opacity value between 0 (fully transparent) and 1 (fully opaque) */
   position: absolute;
