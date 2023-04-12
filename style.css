@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   position: relative;
   font-family: 'Merienda';
   color: white;
