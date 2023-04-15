@@ -9,10 +9,10 @@ body {
 
 body::before {
   content: "";
-  background-image: url('Images/door3.png');
+  background-image: url('Images/stars1.png');
   background-size: repeat;
   opacity: 1.0; /* Adjust the opacity value between 0 (fully transparent) and 1 (fully opaque) */
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -230,13 +230,13 @@ header::before {
     height: auto;
   }
 
-  /* #home {
+  #home {
     background-image: url('Images/door3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 2;
-  } */
+  }
 
  #slideshow {
     position: absolute;
@@ -309,7 +309,7 @@ header::before {
  }
 
  #roadmap {
-  background-image: url("Images/NewLandscapePortrait.png");
+  background-image: url("Images/Landscape Portrait.png");
   background-repeat: no-repeat;    
   background-size: cover;
   background-position: center center;
