@@ -7,13 +7,9 @@ body {
   margin: 0;
 }
 
-body::before {
+body {
   content: "";
-  background-image: url('Images/door3.png');
-  background-size: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url('Images/stars1.png');
   opacity: 1.0; /* Adjust the opacity value between 0 (fully transparent) and 1 (fully opaque) */
   position: absolute;
   top: 0;
@@ -22,6 +18,19 @@ body::before {
   height: 100%;
   z-index: -1; /* Place the background image behind the page content */
 }
+
+.new-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Images/village.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 header {
   position: relative; /* Ensure the ::before pseudo-element is positioned relative to the header */
@@ -216,6 +225,10 @@ header::before {
     position: relative;
   }
 
+  #discord {
+    width: 20%;
+  }
+
   #legend {
     margin-bottom: 300px;
     background-image: url("Images/legend.jpg");
@@ -234,7 +247,7 @@ header::before {
   }
 
   #home {
-    /* background-image: url('Images/door3.png'); */
+    background-image: url('Images/door3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -103,3 +103,23 @@ $(window).resize(function () {
   }
 });
 
+const changeBg = document.querySelector("#village");
+
+window.addEventListener("scroll", () => {
+  if (isScrolledIntoView(changeBg)) {
+    document.body.classList.add("new-bg");
+  } else {
+    document.body.classList.remove("new-bg");
+  }
+});
+
+function isScrolledIntoView(elem) {
+  const rect = elem.getBoundingClientRect();
+  const elemTop = rect.top/1.4;
+
+  // Only completely visible elements return true:
+  const isVisible = elemTop < window.innerHeight;
+  return isVisible;
+}
+
+
