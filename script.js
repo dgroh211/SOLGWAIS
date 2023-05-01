@@ -103,6 +103,7 @@ $(window).resize(function () {
   }
 });
 
+/*
 const changeBg = document.querySelector("#village");
 
 window.addEventListener("scroll", () => {
@@ -122,4 +123,4 @@ function isScrolledIntoView(elem) {
   return isVisible;
 }
 
-
+*/
